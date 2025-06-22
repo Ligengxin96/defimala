@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.20;
 
 import {Script, console} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import {TTToken} from "../src/TT.sol";
 
-contract CounterScript is Script {
-    Counter public counter;
+contract TTTokenScript is Script {
+    TTToken public ttToken;
 
     function setUp() public {}
 
     function run() public {
         vm.startBroadcast();
 
-        counter = new Counter();
+        ttToken = new TTToken();
 
         vm.stopBroadcast();
     }
