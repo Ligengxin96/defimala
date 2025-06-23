@@ -4,4 +4,8 @@ out = "out"
 libs = ["lib"]
 solc = "0.8.20"
 
+[rpc_endpoints]
+bsc_testnet = "https://bsc-testnet.drpc.org"
+bsc_mainnet = "https://bsc-mainnet.public.blastapi.io"
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
